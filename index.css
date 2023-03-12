@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  clear: both;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ade5f9;
+  font-family: "Circular-Loom";
+}
+.card {
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+.card:after,
+.card:before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background: #4172f580;
+  border-radius: 200px;
+  z-index: -1;
+}
+.card:after {
+  top: -100px;
+  right: -100px;
+}
+.card:before {
+  bottom: -100px;
+  left: -100px;
+}
+.profile-img {
+  max-width: 100px;
+  width: 100%;
+}
+.profile-img img {
+  border: 3px solid #333;
+  border-radius: 100px;
+}
+.profile-name,
+.profile-description,
+.stats {
+  margin-bottom: 1rem;
+  color: #333;
+}
+.profile-name h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.profile-name h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+ul {
+  list-style-type: none;
+  max-width: 250px;
+}
+.card,
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+.profile-link {
+  margin-top: 2rem;
+}
+button {
+  padding: 10px 15px;
+  background: transparent;
+  border-radius: 5px;
+  outline: 0;
+  border: 2px solid #333;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  margin-right: 0.5rem;
+}
+button.follow {
+  background-color: #333;
+  color: #fff;
+}
+button.follow:hover {
+  background-color: transparent;
+  color: #333;
+}
+button:hover {
+  background-color: #333;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
